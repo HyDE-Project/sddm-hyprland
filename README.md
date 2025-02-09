@@ -44,7 +44,7 @@ sddm-hyprland tries to source these configuration files:
 
 ```bash
 ${prefix}/share/hyde/sddm/hyprprefs.conf
-/etc/sddm.conf.d/hypr/sddm-hyprland.conf
+/etc/sddm.conf.d/sddm-hyprland.conf
 ```
 
 > [!Note]
