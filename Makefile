@@ -12,7 +12,7 @@ prepare:
 install: clean prepare
 	@install -D $(SRC)/hyprland.conf $(PREFIX)/share/hypr/sddm/hyprland.conf && echo "[Installed] $(PREFIX)/share/hypr/sddm/hyprland.conf" 
 	@install -D $(SRC)/sddm-hyprland.conf /etc/sddm.conf.d/sddm-hyprland.conf && echo "[Installed] /etc/sddm.conf.d/sddm-hyprland.conf"
-	@sed -i 's|CompositorCommand=.*|CompositorCommand=Hyprland -c $(PREFIX)/share/hypr/sddm/hyprland.conf|' /etc/sddm.conf.d/sddm-hyprland.conf &&	echo "[default sddm conf] $(PREFIX)/share/hypr/sddm/hyprland.conf" 
+	@sed -i 's|CompositorCommand=.*|CompositorCommand=start-hyprland -- -c $(PREFIX)/share/hypr/sddm/hyprland.conf|' /etc/sddm.conf.d/sddm-hyprland.conf &&	echo "[default sddm conf] $(PREFIX)/share/hypr/sddm/hyprland.conf" 
 
 
 clean:
