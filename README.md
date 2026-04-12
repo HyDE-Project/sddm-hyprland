@@ -29,12 +29,9 @@ This should work on any distro that provides sddm and hyprland.
 
 ### Archlinux (AUR)
 
-<!--
-    ```bash
-    yay -S sddm-hyprland
-    ``` -->
-
-> Not available yet
+```bash
+yay -S sddm-hyprland
+```
 
 # Configuration
 
