@@ -39,7 +39,8 @@ hl.window_rule({
 })
 
 -- source a file relative to the current configuration file
-pcall(dofile, "./hyprprefs.lua") -- Manually create and edit this file
+local scriptDir = debug.getinfo(1, "S").source:sub(2):match("(.*/)")
+pcall(dofile, (scriptDir or "./") .. "hyprprefs.lua") -- Manually create and edit this file
 -- source from a sddm.conf.d directory
 pcall(dofile, "/etc/sddm.conf.d/hypr/hyprland.lua") -- # Manually create and edit this file
 

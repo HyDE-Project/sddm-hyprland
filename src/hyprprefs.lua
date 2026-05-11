@@ -1,6 +1,6 @@
--- Manually create this file in the same directory as hyprland.conf
--- In this file you can add you configurations
--- Example is a KB language
+-- Manually create this file in the same directory as hyprland.lua
+-- In this file you can add your custom configurations
+-- Example: keyboard layouts
 
 hl.config({
     input = {
