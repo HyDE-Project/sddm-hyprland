@@ -40,7 +40,7 @@ sddm-hyprland tries to source these configuration files:
 > It is on the user to create these file/s and directory and be organized.
 
 ```bash
-${prefix}/share/hyde/sddm/hyprprefs.conf
+${prefix}/share/hyde/sddm/hyprprefs.lua
 /etc/sddm.conf.d/hypr/sddm-hyprland.conf
 ```
 
